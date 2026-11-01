@@ -26,14 +26,14 @@
 ```
 YYYY/
 ├── MM/
-│   └── YYYY-MM-DD.md      # 每日日报
+│   └── YYYY-MM-DD.html    # 每日日报（单文件 HTML 页面）
 ```
 
-按 年/月/日.md 三层组织，例如 `2026/07/2026-07-31.md`。
+按 年/月/日.html 三层组织，例如 `2026/07/2026-07-31.html`。页面由 [answer-me-with-html](https://github.com/QingYunA/answer-me-with-html) 的 `am` CLI 渲染，自带样式与深色模式，单个文件即可打开，不依赖外部资源。2026-10-30 及更早的日报是纯文本 `.md`。
 
 ## 自动生成
 
-工作日早晨 5:30 自动生成，由 AI Agent 收集 arXiv 论文和互联网技术新闻后撰写，并自动提交至本仓库。
+工作日早晨 5:30 自动生成，由 AI Agent 收集 arXiv 论文和互联网技术新闻后撰写，并自动提交至本仓库。技能 `answer-me-with-html` 只在生成日报的 cron job 中加载，日常会话不触发。
 
 ## 提交规则
 
